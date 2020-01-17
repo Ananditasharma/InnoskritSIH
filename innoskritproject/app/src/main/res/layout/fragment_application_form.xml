@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_shadow_end_color"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/testname"
+                android:textColor="#AD000000"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Application"
+                android:textColor="#AD000000"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/testdetails"
+                android:textColor="#AD000000" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="1. NAME (in CAPITALS) "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/name"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error" />
+
+                <EditText
+                    android:id="@+id/etname"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/name"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/shape"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etname"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Mr./Mrs./Ms."
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etfname"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_below="@+id/name"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/etname"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etfname"
+                    android:layout_marginLeft="@dimen/_65sdp"
+                    android:layout_toRightOf="@+id/t1"
+                    android:text="First Name"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etlname"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_below="@+id/t1"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etlname"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Last Name/Surname"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Fathername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="2. FATHER’S / HUSBAND’S NAME (in CAPITALS ) "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/Fathername"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error" />
+
+                <EditText
+                    android:id="@+id/etfirstname"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/Fathername"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/shape"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etfirstname"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="First Name"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etlastname"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/Fathername"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_toRightOf="@+id/etfirstname"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etlastname"
+                    android:layout_marginLeft="@dimen/_75sdp"
+                    android:layout_toRightOf="@+id/text1"
+                    android:text="Last Name"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Mothername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="3. MOTHER’S NAME (in CAPITALS ) "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/Mothername"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error"  />
+
+                <EditText
+                    android:id="@+id/etmotherfirstname"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/Mothername"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:background="@drawable/shape"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/mtext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etmotherfirstname"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="First Name"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etmotherlastname"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_below="@+id/Mothername"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/etmotherfirstname"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/mtext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etmotherlastname"
+                    android:layout_marginLeft="@dimen/_75sdp"
+                    android:layout_toRightOf="@+id/mtext1"
+                    android:text="Last Name"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="4. Date "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/Date"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error" />
+
+                <EditText
+                    android:id="@+id/etdate"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/Date"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/shape"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <ImageView
+                    android:id="@+id/calendarimg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/Date"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/calendar">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etdate"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="DD/MM/YYYY"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/showcalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <!-- Add TextView to display the date -->
+                <TextView
+                    android:id="@+id/date_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Set the Date"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold" />
+
+                <!-- Add CalenderView to display the Calender -->
+                <CalendarView
+                    android:id="@+id/calender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="80dp">
+
+                </CalendarView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="5. Address "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/address"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error" />
+
+                <EditText
+                    android:id="@+id/etaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/address"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/shape"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/streetadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etaddress"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Street Address"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etaddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/shape"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/streetadd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etaddress2"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Place/ Street Address Line 2"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/etdistrict"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/shape"
+                    android:drawablePadding="10dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/textdistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etdistrict"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="District"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etstate"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/etdistrict"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/black"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/textstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etstate"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toRightOf="@+id/textdistrict"
+                    android:text="State / Province"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etpostalcode"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/textdistrict"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/textpostalcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etpostalcode"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Postal/Zip code"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="6. Email "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/email"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error"  />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/email"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/e1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etEmail"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="example@example.com"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="7. Mobile Number "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/mobile"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error" />
+
+                <EditText
+                    android:id="@+id/etmobile"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/mobile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:maxLength="10"
+                    android:lines="1"
+                    android:inputType="number"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etmobile"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="10 digits"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="8. Select Language Paper Option  "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/language"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error" />
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@drawable/shape"
+                    android:prompt="@string/spinner_title"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Any one of the language taught upto Class VII in Sikkim"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="9. CATEGORY OF TEACHER FOR STET "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/categories"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/categories"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#6D000000"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:text="Primary Teacher for Classes I to V"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:buttonTint="#6D000000"
+                        android:checked="true"
+                        android:clickable="true"
+                        android:text="GT Arts for classes VI to VIII"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:buttonTint="#6D000000"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:text="GT Science/Maths for classes VI to VIII"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/educational_qualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="10. EDUCATIONAL QUALIFICATION (enter codes as per the stream/course ) 1=Science, 2=Arts, 3=Commerce, 4=Others ,5=BA, 6=B.Sc , 7=B.Com, 8=Not Applicable.  "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/table"
+                android:layout_width="454dp"
+                android:layout_height="287dp"
+                android:layout_marginLeft="10dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="11. UPLOAD YOUR RECENT COLOUR PASSPORT SIZE PHOTO(unedited /clear photo of the right size) "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/photo"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error"  />
+
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/browsefiles"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/photo"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#0C000000"
+                    card_view:cardCornerRadius="@dimen/_7sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_38sdp"
+                            android:gravity="center"
+                            android:text="Browse Files"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvbrowse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/photo"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_toRightOf="@+id/browsefiles"
+                    android:background="@drawable/shape"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Browse Files"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/browsefiles"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="3 kb – 40 kb (140 pixel height X 110 pixel ) JPG format"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="12. Category/Community code "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/community"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error"  />
+
+                <EditText
+                    android:id="@+id/etcommunity"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_below="@+id/community"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/shape"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etcommunity"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="1.= General /2.= BL / 3.= ST /4.= SC /5 = StateOBC /6.=CentralOBC / 7.= PrimitiveTribe"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/locomotor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="13. Are you orthopedically/Locomotor impaired? "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/locomotor"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error"  />
+
+                <RadioGroup
+                    android:id="@+id/radioGroups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/locomotor"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#6D000000"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:text="YES"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:buttonTint="#6D000000"
+                        android:checked="true"
+                        android:clickable="true"
+                        android:text="NO"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/disability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="14. If YES for the above then,degree of disability"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <EditText
+                    android:id="@+id/etdisability"
+                    android:layout_width="70dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/disability"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/shape"
+                    android:hint="ex 23"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etdisability"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="(state the percentage of disability)"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/appearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="15. Have you appeared for STET earlier ? "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/appearance"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error"  />
+
+                <RadioGroup
+                    android:id="@+id/group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appearance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/radioappearance1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#6D000000"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:text="YES"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioappearance2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:buttonTint="#6D000000"
+                        android:checked="true"
+                        android:clickable="true"
+                        android:text="NO"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/feedetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="16. FEE DETAILS "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/feedetails"
+                    android:text="*"
+                    android:textColor="@color/design_default_color_error" />
+
+                <TextView
+                    android:id="@+id/reciptno."
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/feedetails"
+                    android:layout_marginLeft="15dp"
+                    android:text="Deposit Receipt No"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etreciptno."
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_toRightOf="@+id/reciptno."
+                    android:background="@drawable/shape"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reciptno."
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etamount."
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_below="@+id/etreciptno."
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/amount"
+                    android:background="@drawable/shape"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/nameplace"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/amount"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/name_place"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etnameplace"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/etamount."
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/nameplace"
+                    android:background="@drawable/shape"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/nameplace1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameplace"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/place"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etnameplace1"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/etnameplace"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="9dp"
+                    android:maxLength="100"
+                    android:lines="1"
+                    android:layout_toRightOf="@+id/nameplace1"
+                    android:background="@drawable/shape"
+                    android:drawablePadding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:text="I agree &amp; undertake that..."
+                android:textColor="@color/gray" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:text="(i) The information submitted above is true and correct to the best of my Knowledge.I understand that ,In case any Information proves to be false or incorrect or incomplete,my candidature will be cancelled ."
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/_20sdp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textAlignment="center"
+                android:text="(ii) I understand that qualifying STET does not confer any right to claim for the job of teacher whether regular or adhoc."
+                android:textColor="@color/gray" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="It is one among the eligibility criteria for applying for teaching job."
+                android:textAlignment="center"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="(iii) I didnot round-off the percentage on my Educational Qualification (as in S.No.10 in this form),and I entered as it is with decimals(2 digits). If I ignore this ,and round off then my candidature will be automatically rejected by the processing system,ONLY ELIGIBLE CANDIDATES WILL RECIEVE THE ADMIT CARD."
+                android:textColor="@color/gray" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="(iv) I completed my Teaching Degree/Diploma (B.Ed/D.El.Ed...) as a regular Student by attending classes in an NCTE approved Institution or through NCTE approved Distance mode."
+                android:textColor="@color/gray"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text=".......PUT YOUR SIGNATURE,HERE BELOW......."
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingLeft="15dp"
+                    android:text="UPLOAD YOUR SCANNED SIGNATURE ( clear and of the right size) "
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/signature"
+                    android:text="*"
+                    android:textColor="@color/colorPrimary" />
+
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/browsesignature"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/signature"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardBackgroundColor="#0C000000"
+                    card_view:cardCornerRadius="@dimen/_7sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_38sdp"
+                            android:gravity="center"
+                            android:text="Browse Files"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/tvbrowsesignature"
+                    android:background="@drawable/shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signature"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:layout_marginTop="28dp"
+                    android:layout_toRightOf="@+id/browsesignature"
+                    android:gravity="center"
+                    android:text="Browse Files"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/browsesignature"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="1 kb – 40 kb (110 pixel height X 140 pixel )\n JPG format"
+                    android:textColor="#95CC56"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="FOR OFFICE USE ONLY"
+             />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Documents Submitted (Self Attested copy) Tick the Serial Nos.while recieving."
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="Educational Qualification: Certificate alongwith Mark sheet."
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black"
+                android:text="@string/documents"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="(TO BE FILLED BY THE EXAM CELL AT HRDD) "
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/gray"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="APPLICATION ACKNOWLEDGEMENT FOR STET – 2019 "
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/acknoledgement"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="FORMS WILL NOT BE APPROVED WITHOUT THE PROPER/CLEAR/FORMAL PHOTO WITH THE SIZE MENTIONED ABOVE."
+                android:textColor="@color/gray"
+                android:layout_marginLeft="15dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnsubmit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_80sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardBackgroundColor="@color/design_default_color_primary_dark"
+                card_view:cardCornerRadius="@dimen/_7sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_38sdp"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">innoskritproject</string>
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">My Alert Dialog</string>
+    <string name="please_enter_email">Please enter the email</string>
+    <string name="please_enter_valid_email">Please enter valid email</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="login">login</string>
+    <string name="please_enter_valid_password">Please enter valid Password</string>
+    <string name="please_enter_matching_password">Please enter matching password</string>
+    <string name="testname">Sikkim Teacher Eligibility Test (STET-2020)</string>
+    <string name="testdetails">(fill this form only once,(meant for Candidates in Sikkim)after reading the Bulletin at www.sikkimhrdd.org and paying the fee)</string>
+    <string name="spinner_title">Items</string>
+    <string name="name_place"><![CDATA[Name of Bank &]]></string>
+    <string name="place">Place</string>
+    <string name="documents"><![CDATA[1.CLASS X Marksheet & Certificate\n\n2.CLASS XII Marksheet & Certificate\n\n3.BA/B.Sc/Graduation:Marksheet & Degree (ONLY FOR GT Applicants)\n\n4.B.Ed / D.El.Ed: Marksheet & Degree/Certificate\n\n5.Sikkim Subject Certificate/Certificate of Identification\n6.Birth Certificate\n\n7.Community Certificate\n\n8.Deposit Receipt No. ........................... Date.........................Amount.........\n\n9.Authorised Signatory(Signature with name)..............................................]]></string>
+    <string name="acknoledgement"><![CDATA[Received D.D. No/receipt: ............................................................\n\nDated: ............................................. Amounting Rs: 400/-\n\nReceived by.............................................(Name & Signature)\n\nForm No (Unique ID)....................... Date: ..................]]></string>
+    <string name="cancel">Cancel</string>
+    <string name="grant">Grant</string>
+    <string name="need_storage_permission">Need Storage Permission</string>
+    <string name="app_need_storage_permission">App needs storage permission</string>
+    <string name="please_enter_Otp">Please enter the OTP recieved</string>
+</resources>
